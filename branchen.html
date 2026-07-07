@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Branchen-Lösungen · APPWERK</title>
+<meta name="description" content="Individuelle Mini-Apps für Gastronomie, Werkstatt, Lager, Praxis und Bau – im Detail erklärt.">
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="progress" id="progressBar"></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-dot"></span>APPWERK</a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html#demo">Live-Demo</a>
+      <a href="leistungen.html">Leistungen</a>
+      <a href="branchen.html" class="active">Branchen</a>
+      <a href="ablauf.html">Ablauf</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="index.html#kontakt" class="btn btn-primary" style="padding:.62em 1.35em;margin-left:8px">Projekt anfragen</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#demo">Live-Demo</a>
+  <a href="leistungen.html">Leistungen</a>
+  <a href="branchen.html">Branchen</a>
+  <a href="ablauf.html">Ablauf</a>
+  <a href="ueber-uns.html">Über uns</a>
+  <a href="index.html#kontakt">Projekt anfragen</a>
+</div>
+
+<header class="page-hero">
+  <div class="hero-mesh"></div>
+  <div class="hero-grid-bg"></div>
+  <div class="wrap">
+    <span class="crumb rv"><a href="index.html">START</a><i>/</i>BRANCHEN</span>
+    <h1 class="rv rv-d1">Jede Branche tickt anders.<br><span class="grad-text">Jede App auch.</span></h1>
+    <p class="lead rv rv-d2">Fünf Welten, fünf komplett unterschiedliche Systeme – und ein gemeinsames Prinzip: Die Software passt sich dem Betrieb an, nicht umgekehrt. Ihre Branche ist nicht dabei? Gerade dann sollten wir reden.</p>
+  </div>
+</header>
+<section class="section" style="padding-top:20px"><div class="wrap">
+<div class="detail first" id="gastro">
+  <div class="rv">
+    <span class="d-kicker">Gastronomie · Unser Signature-System</span>
+    <h2>GastroBoard: Bestellungen ohne Zurufe</h2>
+    <p class="dp">Restaurant, Café, Biergarten oder Bar: Der Service tippt Bestellungen am Tablet – Essen erscheint sofort in der Küche, Getränke sofort an der Schanke. Jeder Bildschirm zeigt nur, was ihn betrifft. <a href="index.html#demo" style="color:var(--cobalt);font-weight:600;border-bottom:1.5px solid var(--cobalt)">Live-Demo ausprobieren →</a></p>
+    <ul class="check-list">
+      <li><b>Stationen frei definierbar:</b> Küche, kalte Küche, Schanke, Pass, Terrasse – so viele Bildschirme, wie Ihr Laden braucht.</li>
+      <li><b>Gang-Steuerung:</b> Vorspeise, Haupt, Dessert – die Küche sieht, was wann rausgehen soll.</li>
+      <li><b>Farb-Eskalation:</b> Bestellungen färben sich, wenn sie zu lange liegen. Nichts geht mehr unter.</li>
+      <li><b>Tagesabschluss auf Knopfdruck:</b> Was lief wie oft? Welcher Tisch wartete am längsten? Zahlen statt Bauchgefühl.</li>
+      <li><b>Anbindung ans Kassensystem</b> möglich – Bestellung und Bon aus einem Guss.</li>
+    </ul>
+    <div class="d-meta"><span>MULTI-SCREEN</span><span>ECHTZEIT < 1 s</span><span>GANG-STEUERUNG</span><span>KASSEN-ANBINDUNG</span></div>
+  </div>
+<div class="d-media rv rv-d1"><span class="ghost-num">🍽</span>
+      <div class="sync-card float">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <div class="sc-title">KÜCHE · MONITOR</div>
+        <div class="sc-row" style="animation-delay:0.3s"><span>Schnitzel · Tisch 7 · Gang 2</span><span class="tag hot">NEU</span></div>
+        <div class="sc-row" style="animation-delay:0.8s"><span>Flammkuchen · Tisch 3</span><span class="tag warm">IN ARBEIT</span></div>
+        <div class="sc-row" style="animation-delay:1.3s"><span>Caesar Salad · Tisch 12</span><span class="tag done">✓ FERTIG</span></div>
+        <div class="sc-row" style="animation-delay:1.8s"><span>⌀ Wartezeit heute: 12 min</span><span class="tag  ">LIVE</span></div>
+      </div></div></div>
+<div class="detail flip" id="werkstatt">
+  <div class="rv">
+    <span class="d-kicker">Handwerk · Kfz & Co.</span>
+    <h2>WerkstattBoard: Jeder Auftrag im Blick</h2>
+    <p class="dp">Annahme am Tresen-Tablet, große Anzeige in der Halle, Foto-Doku direkt am Fahrzeug – und der Kunde bekommt automatisch Bescheid, wenn sein Wagen fertig ist.</p>
+    <ul class="check-list">
+      <li><b>Digitale Auftragsannahme:</b> Kennzeichen scannen, Wunsch antippen, fertig – schneller als jeder Durchschlag.</li>
+      <li><b>Hallen-Anzeige:</b> Welche Bühne, welcher Auftrag, welcher Status – für alle sichtbar, ohne dass der Meister pendelt.</li>
+      <li><b>Foto-Dokumentation:</b> Vorher/Nachher-Bilder direkt am Auftrag. Schluss mit „das war schon so“-Diskussionen.</li>
+      <li><b>Teile am Auftrag:</b> Benötigte Teile werden direkt vermerkt und bestellt – nichts wird vergessen.</li>
+      <li><b>Automatische Kunden-Info:</b> SMS oder E-Mail bei „abholbereit“. Ihr Telefon bleibt still.</li>
+    </ul>
+    <div class="d-meta"><span>AUFTRAGS-TRACKING</span><span>FOTO-DOKU</span><span>KUNDEN-BENACHRICHTIGUNG</span><span>100 % PAPIERLOS</span></div>
+  </div>
+<div class="d-media rv rv-d1"><span class="ghost-num">🔧</span>
+      <div class="sync-card float">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <div class="sc-title">HALLE · 3 BÜHNEN</div>
+        <div class="sc-row" style="animation-delay:0.3s"><span>BMW 320d · Bremsen</span><span class="tag hot">BÜHNE 1</span></div>
+        <div class="sc-row" style="animation-delay:0.8s"><span>Golf VII · Inspektion</span><span class="tag warm">WARTET</span></div>
+        <div class="sc-row" style="animation-delay:1.3s"><span>Transit · TÜV</span><span class="tag done">✓ ABHOLBEREIT</span></div>
+        <div class="sc-row" style="animation-delay:1.8s"><span>Kunde benachrichtigt</span><span class="tag  ">AUTOMATISCH</span></div>
+      </div></div></div>
+<div class="detail" id="lager">
+  <div class="rv">
+    <span class="d-kicker">Lager & Logistik</span>
+    <h2>PickFlow: Geführtes Kommissionieren</h2>
+    <p class="dp">Die App führt jeden Kommissionierer per Scanner Schritt für Schritt durch die optimale Route – die Lagerleitung sieht live, welcher Auftrag wo steht.</p>
+    <ul class="check-list">
+      <li><b>Geführte Pick-Routen:</b> Kürzester Weg durchs Lager, Position für Position – auch neue Kräfte picken ab Tag eins fehlerfrei.</li>
+      <li><b>Scan-Bestätigung:</b> Jeder Griff wird gescannt und geprüft. Falscher Artikel? Sofortiger Hinweis statt Retoure.</li>
+      <li><b>Live-Dashboard:</b> Auftragsfortschritt, Rückstände, LKW-Beladung – die Leitung sieht alles in Echtzeit.</li>
+      <li><b>Bestands-Warnungen:</b> Mindestmengen unterschritten? Die App meldet sich, bevor das Regal leer ist.</li>
+      <li><b>Anbindung an Ihre Warenwirtschaft</b> statt Doppelpflege in zwei Systemen.</li>
+    </ul>
+    <div class="d-meta"><span>BARCODE-SCANNER</span><span>ROUTEN-OPTIMIERUNG</span><span>LIVE-DASHBOARD</span><span>WAWI-SCHNITTSTELLE</span></div>
+  </div>
+<div class="d-media rv rv-d1"><span class="ghost-num">📦</span>
+      <div class="sync-card float">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <div class="sc-title">SCANNER · PICK 3/12</div>
+        <div class="sc-row" style="animation-delay:0.3s"><span>Regal 14-B · 6× Art. 8812</span><span class="tag hot">SCANNEN</span></div>
+        <div class="sc-row" style="animation-delay:0.8s"><span>Regal 14-D · 2× Art. 4471</span><span class="tag warm">NÄCHSTER</span></div>
+        <div class="sc-row" style="animation-delay:1.3s"><span>Auftrag #2291</span><span class="tag done">✓ KOMPLETT</span></div>
+        <div class="sc-row" style="animation-delay:1.8s"><span>Genauigkeit heute: 99,6 %</span><span class="tag  ">LIVE</span></div>
+      </div></div></div>
+<div class="detail flip" id="praxis">
+  <div class="rv">
+    <span class="d-kicker">Gesundheitswesen · Praxis & Therapie</span>
+    <h2>PraxisDesk: Ruhe am Empfang</h2>
+    <p class="dp">Patienten checken am Tablet selbst ein, jeder Behandlungsraum sieht auf seinem Display, wer als Nächstes kommt – und der Empfang hat wieder Zeit fürs Wesentliche.</p>
+    <ul class="check-list">
+      <li><b>Self-Check-in:</b> Ankommen, Name antippen, Platz nehmen. Der Empfang wird entlastet, die Schlange verschwindet.</li>
+      <li><b>Raum-Displays:</b> Jeder Raum zeigt den eigenen Tagesplan – wer jetzt, wer gleich, wo es klemmt.</li>
+      <li><b>Wartezeit-Anzeige:</b> Patienten sehen, wann sie dran sind. Weniger Nachfragen, weniger Unruhe.</li>
+      <li><b>Datenschutz zuerst:</b> Verschlüsselung, Zugriffsrollen, Hosting in Deutschland – gebaut für sensible Daten.</li>
+      <li><b>Anbindung an Ihre Terminverwaltung</b> statt paralleler Kalenderpflege.</li>
+    </ul>
+    <div class="d-meta"><span>SELF-CHECK-IN</span><span>RAUM-DISPLAYS</span><span>DSGVO-KONFORM</span><span>TERMIN-SYNC</span></div>
+  </div>
+<div class="d-media rv rv-d1"><span class="ghost-num">🩺</span>
+      <div class="sync-card float">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <div class="sc-title">RAUM 3 · DISPLAY</div>
+        <div class="sc-row" style="animation-delay:0.3s"><span>M. Weber · Manuelle Th.</span><span class="tag hot">JETZT</span></div>
+        <div class="sc-row" style="animation-delay:0.8s"><span>K. Schulz · KG-Gerät</span><span class="tag warm">09:40</span></div>
+        <div class="sc-row" style="animation-delay:1.3s"><span>Raum 2 · frei ab 10:20</span><span class="tag  ">INFO</span></div>
+        <div class="sc-row" style="animation-delay:1.8s"><span>Wartebereich: 2 Personen</span><span class="tag done">✓ RUHIG</span></div>
+      </div></div></div>
+<div class="detail" id="bau">
+  <div class="rv">
+    <span class="d-kicker">Bau & Montage</span>
+    <h2>BauTakt: Das 2-Minuten-Bautagebuch</h2>
+    <p class="dp">Poliere dokumentieren per Smartphone in zwei Minuten: Fotos, Wetter, Personal, Vorkommnisse. Die Bauleitung sieht alle Baustellen gebündelt – rechtssicher archiviert.</p>
+    <ul class="check-list">
+      <li><b>Tageseintrag in 2 Minuten:</b> Vorlagen, Spracheingabe, Foto-Upload – Dokumentation, die nicht nervt.</li>
+      <li><b>Offline-fähig:</b> Kein Netz auf der Baustelle? Kein Problem. Die App gleicht später automatisch ab.</li>
+      <li><b>Alle Baustellen, eine Übersicht:</b> Fortschritt, offene Punkte und Mängel über alle Projekte auf einen Blick.</li>
+      <li><b>Rechtssichere Archivierung:</b> Unveränderbar gespeichert, jederzeit als PDF exportierbar – für Abnahme und Streitfall.</li>
+      <li><b>Mängel mit Foto und Frist:</b> Zuweisen, nachverfolgen, abhaken – nichts versandet mehr im E-Mail-Postfach.</li>
+    </ul>
+    <div class="d-meta"><span>OFFLINE-FÄHIG</span><span>FOTO-DOKU</span><span>PDF-EXPORT</span><span>MÄNGEL-TRACKING</span></div>
+  </div>
+<div class="d-media rv rv-d1"><span class="ghost-num">🏗</span>
+      <div class="sync-card float">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <div class="sc-title">BAULEITUNG · 8 PROJEKTE</div>
+        <div class="sc-row" style="animation-delay:0.3s"><span>BV Lindenhof · Rohbau</span><span class="tag hot">EINTRAG NEU</span></div>
+        <div class="sc-row" style="animation-delay:0.8s"><span>BV Südring · Estrich</span><span class="tag warm">FOTO-DOKU</span></div>
+        <div class="sc-row" style="animation-delay:1.3s"><span>BV Hafencity</span><span class="tag done">✓ ABGENOMMEN</span></div>
+        <div class="sc-row" style="animation-delay:1.8s"><span>Mängel offen: 3</span><span class="tag  ">FRIST LÄUFT</span></div>
+      </div></div></div>
+</div></section>
+<section class="section section-sub">
+  <div class="wrap" style="text-align:center;max-width:760px">
+    <span class="eyebrow rv">Ihre Branche fehlt?</span>
+    <h2 class="rv rv-d1">Umso besser.</h2>
+    <p class="lead rv rv-d2" style="margin:0 auto">Die spannendsten Apps entstehen dort, wo es noch keine Standardlösung gibt. Beschreiben Sie uns Ihren Ablauf – wir sagen Ihnen ehrlich, ob und wie eine Mini-App helfen kann.</p>
+    <div class="center-link rv"><a href="index.html#kontakt" class="btn btn-primary">Ablauf schildern →</a></div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="logo"><span class="logo-dot"></span>APPWERK</a>
+        <p>Individuelle Mini-Apps für Unternehmen. Maßgeschneidert, in Echtzeit synchronisiert, in Deutschland gehostet.</p>
+      </div>
+      <div>
+        <h4>Seiten</h4>
+        <a href="index.html">Startseite</a>
+        <a href="leistungen.html">Leistungen</a>
+        <a href="branchen.html">Branchen</a>
+        <a href="ablauf.html">Ablauf &amp; Preise</a>
+        <a href="ueber-uns.html">Über uns</a>
+      </div>
+      <div>
+        <h4>Branchen</h4>
+        <a href="branchen.html#gastro">Gastronomie</a>
+        <a href="branchen.html#werkstatt">Handwerk</a>
+        <a href="branchen.html#lager">Logistik</a>
+        <a href="branchen.html#praxis">Gesundheitswesen</a>
+        <a href="branchen.html#bau">Bau</a>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <a href="index.html#kontakt">Projekt anfragen</a>
+        <a href="mailto:hallo@appwerk.example">hallo@appwerk.example</a>
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 APPWERK. Alle Rechte vorbehalten.</span>
+      <span>Software, die es nur einmal gibt.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>

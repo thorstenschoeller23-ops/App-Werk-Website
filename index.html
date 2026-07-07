@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APPWERK · Individuelle Mini-Apps für Ihr Unternehmen</title>
+<meta name="description" content="Wir bauen maßgeschneiderte Mini-Apps für Unternehmen – Bestellsysteme über mehrere Bildschirme, Werkstatt-Steuerung und mehr.">
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="progress" id="progressBar"></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-dot"></span>APPWERK</a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html#demo">Live-Demo</a>
+      <a href="leistungen.html">Leistungen</a>
+      <a href="branchen.html">Branchen</a>
+      <a href="ablauf.html">Ablauf</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="index.html#kontakt" class="btn btn-primary" style="padding:.62em 1.35em;margin-left:8px">Projekt anfragen</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#demo">Live-Demo</a>
+  <a href="leistungen.html">Leistungen</a>
+  <a href="branchen.html">Branchen</a>
+  <a href="ablauf.html">Ablauf</a>
+  <a href="ueber-uns.html">Über uns</a>
+  <a href="index.html#kontakt">Projekt anfragen</a>
+</div>
+
+
+<div class="progress" id="progressBar"></div>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="hero-mesh"></div>
+  <div class="hero-grid-bg"></div>
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow rv">Individuelle Mini-Apps · Made in Germany</span>
+      <h1 class="rv rv-d1">Software, die es <span class="grad-text">nur einmal</span> gibt: Ihre.</h1>
+      <p class="lead rv rv-d2">Wir bauen maßgeschneiderte Mini-Apps, die exakt zu Ihren Abläufen passen – vom Bestellsystem über mehrere Bildschirme bis zur Werkstatt-Steuerung. Keine Lizenz von der Stange. Kein Feature zu viel. Jedes Detail für Ihren Betrieb gedacht.</p>
+      <div class="hero-ctas rv rv-d3">
+        <a href="#kontakt" class="btn btn-primary">Kostenloses Erstgespräch →</a>
+        <a href="#demo" class="btn btn-ghost">Live-Demo ausprobieren</a>
+      </div>
+      <div class="hero-trust rv rv-d4">
+        <div><strong data-count="40">0</strong>ausgelieferte Mini-Apps</div>
+        <div><strong data-count="12" data-suffix=" Branchen">0</strong>vom Restaurant bis zur Werkstatt</div>
+        <div><strong data-count="100" data-suffix="&nbsp;%">0</strong>individuell entwickelt</div>
+      </div>
+    </div>
+    <div class="hero-visual rv rv-d2">
+      <div class="sync-badge"><span class="dot"></span>SYNC&nbsp;&lt;&nbsp;1s</div>
+      <div class="sync-card float">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <div class="sc-title">Service · Tablet</div>
+        <div class="sc-row" style="animation-delay:.4s"><span>Tisch 7 · Wiener Schnitzel</span><span class="tag">→ Küche</span></div>
+        <div class="sc-row" style="animation-delay:1.1s"><span>Tisch 7 · Grauburgunder</span><span class="tag">→ Schanke</span></div>
+        <div class="sc-row" style="animation-delay:1.8s"><span>Tisch 3 · Flammkuchen</span><span class="tag done">✓ Fertig</span></div>
+        <div class="sc-row" style="animation-delay:2.5s"><span>Tisch 12 · 2× Espresso</span><span class="tag">→ Schanke</span></div>
+      </div>
+      <div class="sync-card small kitchen float" style="animation-delay:-2s">
+        <div class="sc-title">Küche · Monitor</div>
+        <div class="sc-row" style="animation-delay:.7s"><span>Schnitzel · T7</span><span class="tag hot">Neu</span></div>
+        <div class="sc-row" style="animation-delay:2s"><span>Flammkuchen · T3</span><span class="tag done">✓</span></div>
+      </div>
+      <div class="sync-card small bar-c float" style="animation-delay:-4s">
+        <div class="sc-title">Schanke · Display</div>
+        <div class="sc-row" style="animation-delay:1.4s"><span>Grauburgunder · T7</span><span class="tag warm">Offen</span></div>
+        <div class="sc-row" style="animation-delay:2.8s"><span>2× Espresso · T12</span><span class="tag warm">Offen</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ KPI ============ -->
+<section class="kpis">
+  <div class="wrap kpi-grid">
+    <div class="kpi rv"><small>Weniger Chaos</small><b><span data-count="35">0</span><span>&nbsp;%</span></b><p>weniger Laufwege pro Schicht, weil jeder Bildschirm genau zeigt, was jetzt dran ist</p></div>
+    <div class="kpi rv rv-d1"><small>Mehr Feierabend</small><b><span data-count="8">0</span><span>&nbsp;Std.</span></b><p>Büroarbeit pro Woche zurück – kein Abtippen, kein Suchen, kein Papierstapel mehr</p></div>
+    <div class="kpi rv rv-d2"><small>Weniger Fehler</small><b><span data-count="99.6">0</span><span>&nbsp;%</span></b><p>Genauigkeit, weil die App jeden Handgriff führt statt dem Zufall zu überlassen</p></div>
+    <div class="kpi rv rv-d3"><small>Schneller Start</small><b>ab&nbsp;<span data-count="14">0</span><span>&nbsp;Tagen</span></b><p>vom Erstgespräch zum klickbaren Prototyp – Sie sehen Ihre App, bevor Sie sich festlegen</p></div>
+  </div>
+</section>
+
+<!-- ============ LIVE DEMO ============ -->
+<section class="section" id="demo">
+  <div class="wrap">
+    <div class="demo-head">
+      <span class="eyebrow rv">Signature-Projekt · Live zum Anfassen</span>
+      <h2 class="rv rv-d1">Ein Restaurant. Drei Bildschirme. <span class="grad-text">Null Zurufe.</span></h2>
+      <p class="lead rv rv-d2">So funktioniert unser Gastro-System: Der Service nimmt Bestellungen am Tablet auf – Essen erscheint <b>sofort in der Küche</b>, Getränke <b>sofort an der Schanke</b>. <b>Probieren Sie es aus:</b> Tisch wählen, Artikel antippen, Status umschalten.</p>
+    </div>
+    <div class="demo-shell rv">
+      <div class="demo-topbar">
+        <span class="name">GASTROBOARD&nbsp;·&nbsp;DEMO-MODUS</span>
+        <span class="demo-live"><span class="dot"></span>ALLE GERÄTE VERBUNDEN</span>
+      </div>
+      <div class="demo-grid">
+        <!-- SERVICE -->
+        <div class="panel" id="panelService">
+          <div class="panel-h"><b>Service</b><span class="chip chip-s">TABLET</span></div>
+          <div class="table-select" id="tableSelect">
+            <button class="table-btn active" data-table="3">TISCH 3</button>
+            <button class="table-btn" data-table="7">TISCH 7</button>
+            <button class="table-btn" data-table="12">TISCH 12</button>
+          </div>
+          <div class="item-grid">
+            <button class="item-btn" data-name="Wiener Schnitzel" data-type="food">🍽 Wiener Schnitzel<small>KÜCHE · 18,90&nbsp;€</small></button>
+            <button class="item-btn" data-name="Flammkuchen" data-type="food">🍽 Flammkuchen<small>KÜCHE · 12,50&nbsp;€</small></button>
+            <button class="item-btn" data-name="Caesar Salad" data-type="food">🍽 Caesar Salad<small>KÜCHE · 11,00&nbsp;€</small></button>
+            <button class="item-btn" data-name="Grauburgunder 0,2" data-type="drink">🥂 Grauburgunder<small>SCHANKE · 6,80&nbsp;€</small></button>
+            <button class="item-btn" data-name="Spezi 0,4" data-type="drink">🥤 Spezi 0,4<small>SCHANKE · 4,20&nbsp;€</small></button>
+            <button class="item-btn" data-name="Espresso doppio" data-type="drink">☕ Espresso doppio<small>SCHANKE · 3,60&nbsp;€</small></button>
+          </div>
+          <div class="order-list" id="listService">
+            <div class="order-empty" id="emptyService">Noch keine Bestellung.<br>Tippen Sie oben einen Artikel an&nbsp;→ er landet automatisch am richtigen Bildschirm.</div>
+          </div>
+        </div>
+        <!-- KÜCHE -->
+        <div class="panel" id="panelKitchen">
+          <div class="panel-h"><b>Küche</b><span class="chip chip-k">MONITOR</span></div>
+          <div class="order-list" id="listKitchen">
+            <div class="order-empty" id="emptyKitchen">Warten auf Bestellungen aus dem Service&nbsp;…<br><br>Hier erscheint nur, was die Küche betrifft.</div>
+          </div>
+        </div>
+        <!-- SCHANKE -->
+        <div class="panel" id="panelBar">
+          <div class="panel-h"><b>Schanke</b><span class="chip chip-b">DISPLAY</span></div>
+          <div class="order-list" id="listBar">
+            <div class="order-empty" id="emptyBar">Warten auf Getränkebestellungen&nbsp;…<br><br>Die Schanke sieht keine Essensbestellungen – nur ihre eigenen.</div>
+          </div>
+        </div>
+      </div>
+      <div class="demo-log"><span class="lbl">LOG&nbsp;›</span><span class="msg" id="logMsg">System bereit. Alle drei Bildschirme sind in Echtzeit verbunden.</span></div>
+    </div>
+    <p class="demo-note rv">Das ist <b>keine Animation</b> – Sie bedienen gerade eine echte Miniatur des Systems. Genau so fühlt sich Ihre individuelle App später an: <b>auf Ihre Abläufe zugeschnitten, bis ins letzte Detail.</b></p>
+  </div>
+</section>
+
+<!-- ============ LEISTUNGEN ============ -->
+<section class="section services" id="leistungen">
+  <div class="wrap">
+    <span class="eyebrow rv">Was wir für Sie tun</span>
+    <h2 class="rv rv-d1">Vier Leistungen. Ein Ziel:<br>Ihr Betrieb läuft <span class="grad-text">runder.</span></h2>
+    <p class="lead rv rv-d2">Wir sind keine Software-Fabrik. Wir kommen zu Ihnen, schauen uns Ihre Abläufe an – und bauen dann genau das Werkzeug, das Ihnen fehlt.</p>
+    <div class="svc-grid">
+      <div class="svc rv"><div class="ico">🔍</div><h3>Analyse vor Ort</h3><p>Wir stehen mit in Ihrer Küche, Ihrer Werkstatt, Ihrem Lager. Erst wenn wir Ihre Abläufe verstanden haben, reden wir über Software.</p><span class="tagline">Zuhören vor Coden</span></div>
+      <div class="svc rv rv-d1"><div class="ico">✏️</div><h3>Design &amp; Prototyp</h3><p>In wenigen Tagen halten Sie einen klickbaren Prototyp in der Hand – abgestimmt mit den Menschen, die später täglich damit arbeiten.</p><span class="tagline">Sehen vor Entscheiden</span></div>
+      <div class="svc rv rv-d2"><div class="ico">⚙️</div><h3>Entwicklung</h3><p>Mehrere Accounts, mehrere Bildschirme, Echtzeit-Sync, Rollen &amp; Rechte – wir bauen robuste Apps für Tablet, Monitor und Smartphone.</p><span class="tagline">Ein System, alle Geräte</span></div>
+      <div class="svc rv rv-d3"><div class="ico">🤝</div><h3>Betrieb &amp; Ausbau</h3><p>Nach dem Start bleiben wir dran: Hosting, Updates, neue Funktionen. Ihre App wächst mit Ihrem Betrieb – nicht andersherum.</p><span class="tagline">Partner statt Projekt</span></div>
+    </div>
+    <div class="center-link rv"><a href="leistungen.html" class="btn btn-ghost">Alle Leistungen im Detail →</a></div>
+  </div>
+</section>
+
+<!-- ============ ERGEBNIS (Vorher/Nachher) ============ -->
+<section class="section" id="ergebnis">
+  <div class="wrap">
+    <span class="eyebrow rv">Das Ergebnis</span>
+    <h2 class="rv rv-d1">Es geht nicht um eine App.<br>Es geht darum, wie sich <span class="grad-text">Ihr Tag anfühlt.</span></h2>
+    <p class="lead rv rv-d2">Legen Sie den Schalter um und sehen Sie, was sich in Ihrem Betrieb wirklich ändert – egal ob Restaurant, Werkstatt, Lager oder Praxis.</p>
+
+    <div class="ba-switch-row rv rv-d3">
+      <span class="ba-label" id="labelBefore">IHR ALLTAG HEUTE</span>
+      <button class="ba-switch" id="baSwitch" role="switch" aria-checked="false" aria-label="Vorher/Nachher umschalten">
+        <span class="ba-knob"></span>
+      </button>
+      <span class="ba-label" id="labelAfter">MIT IHRER APP</span>
+    </div>
+
+    <div class="ba-grid" id="baGrid">
+      <div class="ba-card rv" tabindex="0">
+        <div class="ba-inner">
+          <div class="ba-face ba-front"><span class="ba-tag">HEUTE</span><h3>Zettel, Zurufe, Missverständnisse.</h3><p>Und am Ende des Tages fehlt trotzdem irgendwas – und keiner war's.</p></div>
+          <div class="ba-face ba-back"><span class="ba-tag">MIT IHRER APP</span><h3>Jede Info landet automatisch beim Richtigen.</h3><p>Sofort, in Echtzeit, ohne ein einziges Wort quer durch den Raum.</p><b>0 verlorene Aufträge</b></div>
+        </div>
+      </div>
+      <div class="ba-card rv rv-d1" tabindex="0">
+        <div class="ba-inner">
+          <div class="ba-face ba-front"><span class="ba-tag">HEUTE</span><h3>Ihr Team rennt, sucht und fragt nach.</h3><p>Den halben Tag. Und im Stress wird der Ton rauer.</p></div>
+          <div class="ba-face ba-back"><span class="ba-tag">MIT IHRER APP</span><h3>Jeder Bildschirm zeigt genau das, was jetzt dran ist.</h3><p>Nicht mehr, nicht weniger. Jeder Handgriff sitzt.</p><b>35&nbsp;% weniger Laufwege</b></div>
+        </div>
+      </div>
+      <div class="ba-card rv rv-d2" tabindex="0">
+        <div class="ba-inner">
+          <div class="ba-face ba-front"><span class="ba-tag">HEUTE</span><h3>Abends noch zwei Stunden Büro.</h3><p>Abtippen, sortieren, hinterhertelefonieren – nach zehn Stunden auf den Beinen.</p></div>
+          <div class="ba-face ba-back"><span class="ba-tag">MIT IHRER APP</span><h3>Alles ist schon da, wo es hingehört.</h3><p>Feierabend heißt wieder Feierabend.</p><b>8&nbsp;Std. pro Woche zurück</b></div>
+        </div>
+      </div>
+      <div class="ba-card rv" tabindex="0">
+        <div class="ba-inner">
+          <div class="ba-face ba-front"><span class="ba-tag">HEUTE</span><h3>Neue Leute brauchen Wochen, bis sie durchblicken.</h3><p>Und so lange hängt alles an Ihnen.</p></div>
+          <div class="ba-face ba-back"><span class="ba-tag">MIT IHRER APP</span><h3>Die App erklärt sich von selbst.</h3><p>Weil sie exakt so funktioniert, wie Ihr Betrieb denkt.</p><b>Eingearbeitet in 1&nbsp;Schicht</b></div>
+        </div>
+      </div>
+      <div class="ba-card rv rv-d1" tabindex="0">
+        <div class="ba-inner">
+          <div class="ba-face ba-front"><span class="ba-tag">HEUTE</span><h3>Wie's wirklich läuft, wissen Sie erst am Monatsende.</h3><p>Wenn es zu spät ist, gegenzusteuern.</p></div>
+          <div class="ba-face ba-back"><span class="ba-tag">MIT IHRER APP</span><h3>Live-Zahlen auf einen Blick.</h3><p>Jederzeit, von jedem Gerät – auch vom Sofa aus.</p><b>Überblick in Echtzeit</b></div>
+        </div>
+      </div>
+      <div class="ba-card rv rv-d2" tabindex="0">
+        <div class="ba-inner">
+          <div class="ba-face ba-front"><span class="ba-tag">HEUTE</span><h3>Der Stress überträgt sich.</h3><p>Aufs Team, auf die Stimmung – und Ihre Kunden spüren es.</p></div>
+          <div class="ba-face ba-back"><span class="ba-tag">MIT IHRER APP</span><h3>Ruhe im Laden.</h3><p>Ein Betrieb, der läuft, fühlt sich anders an. Für alle.</p><b>Kunden merken den Unterschied</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ba-branches rv">
+      <span>Läuft bereits in</span>
+      <div class="ba-chip-row">
+        <i>🍽 Restaurants</i><i>🔧 Werkstätten</i><i>📦 Lagern</i><i>🩺 Praxen</i><i>🏗 Baustellen</i><i class="ba-you">✦ bald in Ihrem Betrieb</i>
+      </div>
+      <p class="mini-note">Neugierig, wie das konkret aussieht? <a href="branchen.html">Zu den Branchen-Lösungen →</a></p>
+    </div>
+
+    <div class="ba-cta rv">
+      <div>
+        <h3>Wollen Sie das auch?</h3>
+        <p>Erzählen Sie uns in 30 Minuten, wo es bei Ihnen hakt – wir sagen Ihnen, wie einfach es laufen könnte.</p>
+      </div>
+      <a href="#kontakt" class="btn">Ja, zeigt mir wie →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WARUM ============ -->
+<section class="section why">
+  <div class="wrap">
+    <span class="eyebrow rv">Individuell vs. Standard</span>
+    <h2 class="rv rv-d1">Warum keine Software „von der Stange“?</h2>
+    <p class="lead rv rv-d2">Standard-Tools zwingen Ihren Betrieb in fremde Abläufe. Wir drehen es um: Die Software passt sich Ihnen an – nicht Sie der Software.</p>
+    <div class="compare">
+      <div class="cmp std rv">
+        <h3>Standard-Software <span class="badge">Von der Stange</span></h3>
+        <ul>
+          <li>Hunderte Funktionen – aber die eine, die Sie brauchen, fehlt</li>
+          <li>Monatliche Lizenzkosten pro Nutzer, für immer</li>
+          <li>Ihr Team muss sich an fremde Abläufe gewöhnen</li>
+          <li>Änderungswünsche? Ticket schreiben und hoffen</li>
+          <li>Ihre Daten liegen irgendwo – oft außerhalb der EU</li>
+        </ul>
+      </div>
+      <div class="cmp us rv rv-d1">
+        <h3>Ihre APPWERK Mini-App <span class="badge">Maßarbeit</span></h3>
+        <ul>
+          <li>Exakt Ihre Abläufe – jeder Button hat einen Grund</li>
+          <li>Einmal gebaut, gehört sie Ihnen. Planbare Kosten</li>
+          <li>Ihr Team versteht die App in Minuten, nicht Wochen</li>
+          <li>Neue Idee? Ein Anruf genügt – wir bauen sie ein</li>
+          <li>Hosting in Deutschland, DSGVO-konform, Ihre Daten</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROZESS ============ -->
+<section class="section" id="prozess">
+  <div class="wrap">
+    <span class="eyebrow rv">Der Weg zu Ihrer App</span>
+    <h2 class="rv rv-d1">Machen wir aus Ihrer Idee eine Erfolgsgeschichte.<br><span class="grad-text">Schritt für Schritt. Gemeinsam.</span></h2>
+    <div class="steps" id="stepsTimeline">
+      <svg class="steps-svg" id="stepsSvg" aria-hidden="true">
+        <defs>
+          <linearGradient id="stepsGradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#2B3FE4"/>
+            <stop offset="1" stop-color="#7C3AED"/>
+          </linearGradient>
+        </defs>
+        <path id="stepsBase"/><path id="stepsProg"/>
+      </svg>
+
+      <div class="step s-left rv">
+        <div class="step-card">
+          <h3>Über Ihre Idee sprechen</h3>
+          <p>Erzählen Sie uns von Ihrer Vision, Ihren Problemen und Ihren Erwartungen. Wir sind ganz Ohr!</p>
+          <a href="#kontakt" class="step-cta">Diesen Schritt starten →</a>
+        </div>
+        <div class="step-num"><span>1</span></div>
+        <div class="step-spacer"></div>
+      </div>
+
+      <div class="step s-right rv">
+        <div class="step-spacer"></div>
+        <div class="step-num"><span>2</span></div>
+        <div class="step-card">
+          <h3>Das Ziel definieren</h3>
+          <p>Wir schärfen gemeinsam den Zweck Ihrer Mini-App – damit sie im Alltag Ihres Betriebs wirklich den Unterschied macht.</p>
+        </div>
+      </div>
+
+      <div class="step s-left rv">
+        <div class="step-card">
+          <h3>Die Strategie festlegen</h3>
+          <p>Aus dem Ziel wird ein konkreter Plan: mit Zeitrahmen, Budget, Funktionsumfang und allem, was dazugehört. Als Festpreis, ohne Überraschungen.</p>
+        </div>
+        <div class="step-num"><span>3</span></div>
+        <div class="step-spacer"></div>
+      </div>
+
+      <div class="step s-right rv">
+        <div class="step-spacer"></div>
+        <div class="step-num"><span>4</span></div>
+        <div class="step-card">
+          <h3>Abläufe vor Ort erforschen</h3>
+          <p>Wir begleiten eine Schicht in Ihrem Betrieb und schauen genau hin, was Ihr Team wirklich braucht. Diese Erkenntnisse fließen direkt ins Konzept – Feinheit für Feinheit.</p>
+        </div>
+      </div>
+
+      <div class="step s-left rv">
+        <div class="step-card">
+          <h3>Ihre App erschaffen</h3>
+          <p>Jetzt geht's los: Design, Entwicklung und Tests – Ihre Idee wird zum Leben erweckt. Jede Woche sehen Sie den Fortschritt, keine Blackbox.</p>
+        </div>
+        <div class="step-num"><span>5</span></div>
+        <div class="step-spacer"></div>
+      </div>
+
+      <div class="step s-right rv">
+        <div class="step-spacer"></div>
+        <div class="step-num"><span>6</span></div>
+        <div class="step-card">
+          <h3>Einführung im Betrieb</h3>
+          <p>Zeit für den Start: Wir richten alle Geräte ein, schulen Ihr Team persönlich und sammeln vom ersten Tag an Feedback ein.</p>
+        </div>
+      </div>
+
+      <div class="step s-left rv">
+        <div class="step-card">
+          <h3>Weiterentwicklung</h3>
+          <p>Der Ball bleibt im Spiel: frische Updates und neue Funktionen – gesteuert von dem, was Ihr Alltag zeigt und Ihr Team sich wünscht.</p>
+        </div>
+        <div class="step-num"><span>7</span></div>
+        <div class="step-spacer"></div>
+      </div>
+
+      <div class="step s-right rv">
+        <div class="step-spacer"></div>
+        <div class="step-num"><span>8</span></div>
+        <div class="step-card">
+          <h3>Übergabe an Ihr Team</h3>
+          <p>Sie möchten das System irgendwann komplett selbst betreiben? Wir helfen beim Aufbau und übergeben den Staffelstab reibungslos – inklusive Dokumentation.</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="center-link rv"><a href="ablauf.html" class="btn btn-ghost">Ablauf &amp; Preise im Detail →</a></div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section testi">
+  <div class="wrap">
+    <span class="eyebrow rv">Kundenstimmen</span>
+    <h2 class="rv rv-d1">Was unsere Kunden sagen.</h2>
+  </div>
+  <div class="testi-track" id="testiTrack"></div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <span class="eyebrow rv">Häufige Fragen</span>
+    <h2 class="rv rv-d1">Alles, was Sie vor dem Start wissen wollen.</h2>
+    <div class="faq-list rv rv-d2">
+      <details class="faq"><summary>Was kostet eine individuelle Mini-App?<span class="pl">+</span></summary><div class="a">Das hängt vom Umfang ab. Ein fokussiertes System wie ein Bestell-Board für die Gastronomie startet typischerweise im niedrigen bis mittleren vierstelligen Bereich. Nach dem kostenlosen Erstgespräch erhalten Sie ein Festpreis-Angebot – ohne versteckte Kosten und ohne Lizenzgebühren pro Nutzer.</div></details>
+      <details class="faq"><summary>Wie lange dauert es bis zur fertigen App?<span class="pl">+</span></summary><div class="a">Den klickbaren Prototyp sehen Sie ab 14 Tagen. Die fertige, im Betrieb laufende App gibt es je nach Umfang nach 4 bis 10 Wochen. Kleinere Systeme sind oft schneller einsatzbereit.</div></details>
+      <details class="faq"><summary>Brauche ich spezielle Geräte oder teure Hardware?<span class="pl">+</span></summary><div class="a">Nein. Unsere Apps laufen im Browser – auf handelsüblichen Tablets, Monitoren und Smartphones, die Sie oft schon haben. Wenn neue Geräte sinnvoll sind, beraten wir herstellerneutral und richten alles für Sie ein.</div></details>
+      <details class="faq"><summary>Funktioniert das mit mehreren Accounts und Bildschirmen gleichzeitig?<span class="pl">+</span></summary><div class="a">Ja, das ist unsere Kernkompetenz: mehrere Accounts mit unterschiedlichen Rollen auf mehreren Bildschirmen, alles in Echtzeit synchronisiert. Die Küche sieht nur Küchen-Themen, die Schanke nur Getränke, die Leitung sieht alles – jeder genau das, was er braucht.</div></details>
+      <details class="faq"><summary>Was passiert, wenn ich später neue Funktionen brauche?<span class="pl">+</span></summary><div class="a">Genau dafür sind Mini-Apps gemacht: Sie wachsen mit. Ein kurzes Gespräch, ein Angebot, und die neue Funktion wird eingebaut – ohne dass Sie das System wechseln müssen. Viele Kunden erweitern ihre App bereits nach wenigen Monaten.</div></details>
+      <details class="faq"><summary>Wem gehören App und Daten?<span class="pl">+</span></summary><div class="a">Ihnen. Sie erhalten volle Nutzungsrechte an Ihrer App, und Ihre Daten werden DSGVO-konform in Deutschland gehostet. Auf Wunsch betreiben wir das System auch komplett auf Ihrer eigenen Infrastruktur.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAKT ============ -->
+<section class="section" id="kontakt" style="padding-top:0">
+  <div class="contact-card">
+    <div class="contact-inner">
+      <div class="contact-info">
+        <span class="eyebrow rv">Projekt anfragen</span>
+        <h2 class="rv rv-d1">Erzählen Sie uns, wo es hakt. Wir bauen das Werkzeug.</h2>
+        <p class="rv rv-d2">Beschreiben Sie kurz Ihren Betrieb und Ihr Problem – Sie erhalten innerhalb eines Werktags eine persönliche Antwort. Kein Callcenter, kein Bot.</p>
+        <div class="contact-points">
+          <div class="cp rv"><div class="i">💬</div><div><b>Kostenloses Erstgespräch</b><span>30–45 Minuten, unverbindlich, per Video oder vor Ort</span></div></div>
+          <div class="cp rv rv-d1"><div class="i">📄</div><div><b>Festpreis-Angebot</b><span>Transparent kalkuliert, keine laufenden Lizenzkosten</span></div></div>
+          <div class="cp rv rv-d2"><div class="i">🇩🇪</div><div><b>Hosting in Deutschland</b><span>DSGVO-konform, Ihre Daten gehören Ihnen</span></div></div>
+        </div>
+      </div>
+      <div class="form" id="formWrap">
+        <form id="contactForm" novalidate>
+          <h3>In 2 Minuten angefragt ↓</h3>
+          <div class="f-row">
+            <div><label for="fName">Ihr Name*</label><input id="fName" type="text" required placeholder="Max Mustermann"></div>
+            <div><label for="fCompany">Unternehmen*</label><input id="fCompany" type="text" required placeholder="Restaurant Adler"></div>
+          </div>
+          <label for="fMail">E-Mail*</label>
+          <input id="fMail" type="email" required placeholder="max@restaurant-adler.de">
+          <label for="fBranche">Ihre Branche</label>
+          <select id="fBranche">
+            <option>Gastronomie &amp; Hotellerie</option>
+            <option>Handwerk &amp; Werkstatt</option>
+            <option>Lager &amp; Logistik</option>
+            <option>Praxis &amp; Gesundheitswesen</option>
+            <option>Bau</option>
+            <option>Andere Branche</option>
+          </select>
+          <label for="fMsg">Wo hakt es bei Ihnen?*</label>
+          <textarea id="fMsg" required placeholder="Beispiel: Bei uns gehen im Stress Bestellzettel verloren, und die Küche weiß nie, was Priorität hat …"></textarea>
+          <button type="submit" class="btn btn-primary">Anfrage senden →</button>
+        </form>
+        <div class="form-ok" id="formOk">
+          <div class="big">🎉</div>
+          <h3>Anfrage angekommen!</h3>
+          <p>Wir melden uns innerhalb eines Werktags persönlich bei Ihnen.<br>Bis gleich!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="logo"><span class="logo-dot"></span>APPWERK</a>
+        <p>Individuelle Mini-Apps für Unternehmen. Maßgeschneidert, in Echtzeit synchronisiert, in Deutschland gehostet.</p>
+      </div>
+      <div>
+        <h4>Seiten</h4>
+        <a href="index.html">Startseite</a>
+        <a href="leistungen.html">Leistungen</a>
+        <a href="branchen.html">Branchen</a>
+        <a href="ablauf.html">Ablauf &amp; Preise</a>
+        <a href="ueber-uns.html">Über uns</a>
+      </div>
+      <div>
+        <h4>Branchen</h4>
+        <a href="branchen.html#gastro">Gastronomie</a>
+        <a href="branchen.html#werkstatt">Handwerk</a>
+        <a href="branchen.html#lager">Logistik</a>
+        <a href="branchen.html#praxis">Gesundheitswesen</a>
+        <a href="branchen.html#bau">Bau</a>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <a href="index.html#kontakt">Projekt anfragen</a>
+        <a href="mailto:hallo@appwerk.example">hallo@appwerk.example</a>
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 APPWERK. Alle Rechte vorbehalten.</span>
+      <span>Software, die es nur einmal gibt.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
